@@ -1,0 +1,375 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	margin:0px;
+	padding:0px;
+}
+
+.bgImage {
+	z-index: -1;
+	left:0px;
+	top:0px;
+	position:absolute;
+	width: 100%;
+	height:100%;
+}
+
+.theme1 {
+	margin-left:13%;
+	margin-right:12.5%;
+	z-index: 100;
+	font-family: "Lucida Sans";
+}
+
+.theme1 .headerTable {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.theme1 .mainTable {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.theme1 .mainDiv, .theme1 .scroll-pane {
+	height:600px;
+	width: 100%;
+	overflow: auto;
+	box-shadow: 5px 10px 5px #888888;
+}
+
+.theme1 .heading {
+	height: 50px;
+	background-color:#5DCEAF;
+	font-weight:bold;
+	font-size: 20px;
+	text-align:center;
+}
+
+.theme1 .teamMember {
+	background-color:#FFFFFF;
+	height:70px;
+	margin:0;
+	padding:0;
+}
+
+
+.theme1 .teamMember table tr td{
+	text-align:left;
+	font-size:13px;
+	font-weight:bold;
+}
+
+.theme1 .app {
+	background-color:inherit;
+	color: #66ddaa;
+	font-weight:bolder;
+	font-size:30px;
+	height:70px;
+	text-align:center;
+}
+
+.theme1 .dt {
+	background-color:#FFFFFF;
+	height:70px;
+	text-align:center;
+	vertical-align: middle;
+	font-size:13px;
+	font-weight:bold;
+}
+
+.theme1 .subHeading {
+	height:10px;
+	/*background-color:#F68D36;*/
+	background: -webkit-linear-gradient(top, #F68D36, #F9B883); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, #F68D36, #F9B883); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, #F68D36, #F9B883); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, #F68D36, #F9B883); /* Standard syntax (must be last) */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F68D36', endColorstr='#F9B883'); /* for IE */
+	font-size: 14px;
+	text-align:center;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+
+.theme1 .subHeading img{
+	height:10px;
+	margin-top:3px;
+	cursor: pointer;
+}
+
+.theme1 .pmtCell, .theme1 .rdsCell, .theme1 .defectsCell,
+.theme1 .ticketsCell, .theme1 .queriesCell
+ {
+	width:100%;
+}
+
+.theme1 .pmtTable, .theme1 .rdsTable, .theme1 .defectsTable,
+.theme1 .ticketsTable,.theme1 .queriesTable {
+	border: 1px solid black;
+	border-collapse:collapse;
+	width:100%;
+}
+
+.theme1 .pmtTable tr th, .theme1 .rdsTable tr th, .theme1 .defectsTable tr th,
+.theme1 .ticketsTable tr th, .theme1 .queriesTable tr th {
+	border : 1px solid black;
+	background-color:#F9B883;
+	text-align:center;
+	font-size:11px;
+	color:#BF3F17;  
+}
+
+.theme1 .pmtTable tr td, .theme1 .rdsTable tr td, .theme1 .defectsTable tr td,
+.theme1 .ticketsTable tr td, .theme1 .queriesTable tr td {
+	border : 1px solid black;
+	text-align:center;
+	font-size:11px;
+}
+
+.theme1 .otherInfoCell {
+	width:100%;
+}
+
+.theme1 .otherInfoTable {
+	border: 1px solid black;
+	border-collapse:collapse;
+	width:100%;
+}
+
+.theme1 .otherInfoTable tr th {
+	height:10px;
+	background-color:#F68D36;
+	text-align:center;
+	font-size:14px;
+	color:#FFFFFF;
+}
+
+.theme1 .otherInfoTable tr td {
+	border : 1px solid black;
+	text-align:center;
+	font-size:11px;
+}
+
+.theme1 .actionCell img {
+	cursor:pointer;
+}
+
+.theme1 .mainDiv .mainTable .newBtn, .theme1 .mainDiv .mainTable .newBtn td {
+	border:none;
+	border-style: none;
+	border-color: #FFFFFF;
+	border-bottom: hidden;
+	border-left: hidden;
+	border-right: hidden;
+} 
+
+.theme1 .mainDiv .mainTable .newBtn img {
+	cursor: pointer;
+}
+
+.theme1 .deleteBox, .theme1 .loadingBox {
+	display:none;
+	text-align:center;
+	color:#000000;
+	font-size:14px;
+}
+
+.dialogBtn .ui-button-text{
+	background : #F68D36;
+	color : #FFFFFF;
+}
+
+.processImage {
+	text-align:center;
+	
+	height:100%;
+	width:100%;
+}
+
+.processImage img {
+	width:20px;
+	height:20px;	
+}
+
+.themeDiv {
+	width:150px;
+	z-index:800;
+	height:100%;
+	float:right;
+	position:fixed;
+	right:0px;
+	
+}
+
+.themeDiv .themeBtn {
+	width:auto;
+	height:auto;
+	float:right;
+	margin-right:5px;
+	position:relative;
+	top:40%;
+	cursor: pointer;
+}
+
+.themeDiv .closeThemeBtn {
+	width:auto;
+	height:auto;
+	float:right;
+	position:relative;
+	top:40%;
+	margin-right:123px;
+	cursor: pointer;
+}
+
+.themeDiv .themeContent {
+	background-color:rgb(196, 215, 155);
+	display: none;
+	width:100%;
+	height:100%;
+}
+
+.themeDiv .themeContent .themeColorBox{
+	display: block;
+	width:20px;
+	height:20px;
+	float:left;
+}
+.themeDiv .themeContent .themeArea{
+	margin-left:27px;
+}
+
+.themeDiv .themeContent .themeArea table{
+	
+}
+
+.themeDiv .themeContent .themeArea table tr {
+	padding:10px;
+}
+
+.themeDiv .themeContent .themeArea table tr td.redTheme{
+	background-color:rgb(255,0,0);
+	cursor:pointer;
+}
+
+.themeDiv .themeContent .themeArea table tr td.greenTheme{
+	background-color:rgb(0,255,0);
+	cursor:pointer;
+}
+
+.themeDiv .themeContent .themeArea table tr td.blueTheme{
+	background-color:rgb(0,0,255);
+	cursor:pointer;
+}
+
+.themeDiv .themeContent .themeArea table tr td.saveThemeLink a:link, 
+.themeDiv .themeContent .themeArea table tr td.saveThemeLink a:visited{
+	text-decoration: none;
+	font-size:12px;
+	color:rgb(40,40,40);
+	padding:4px;
+    background-color: rgb(192,0,0);
+    color:rgb(255,255,255);	
+}
+
+.themeDiv .themeContent .themeArea table tr td.saveThemeLink a:hover, 
+.themeDiv .themeContent .themeArea table tr td.saveThemeLink a:active {
+
+    background-color: rgb(255,155,155);
+	color:rgb(255,255,255);
+    font-size:12px;
+    text-decoration: none;
+    padding:4px;
+}
+
+.theme1 .pmtTable tr td input,
+.theme1 .rdsTable tr td input,
+.theme1 .defectsTable tr td input,
+.theme1 .ticketsTable tr td input,
+.theme1 .queriesTable tr td input{
+	border-top-left-radius: 15px; 
+	border-top-right-radius: 0px; 
+	border-bottom-right-radius: 15px; 
+	border-bottom-left-radius: 0px; 
+	height: 13px; padding-top: 3px; 
+	padding-right: 3px; 
+	padding-bottom: 7px; 
+	padding-left: 10px; 
+	margin-top: 3px; 
+	margin-right: 3px; 
+	margin-bottom: 3px; 
+	margin-left: 3px; 
+	width: 150px;
+}
+
+.theme1 .imageProfileDiv {
+	width:120px;
+	height:150px;
+	vertical-align:middle;
+	text-align:center;
+	border: 2px solid rgb(0,200,255);
+}
+
+.theme1 .imageProfileDiv image {
+	width:120px;
+	height:150px;
+}
+
+.theme1 .imageProfileDiv .chartPersonName {
+	width:121px;
+	height:30px;
+	margin-top:-30px;
+	padding-top:8px;
+	position:relative;
+	z-index:1000;
+	border-top: 2px solid rgb(0,200,255);
+	font-size:12px;
+	text-align:center;
+}
+
+.pageHeader {
+   position:relative;
+   z-index:1000;
+   top:0;
+   left:0;
+   width:100%;
+   height:27px;
+   background-color: #666666;
+   padding-left:40%;
+   padding-right:30%;
+   text-align:center;
+   display:none;
+}
+
+.pageHeader ul{
+   	list-style-type: none;
+   	margin:0;
+   	padding:0;
+   	overflow:hidden;
+   	width:100%;
+   	padding-left:10px;
+   	padding-right:10px;
+}
+
+.pageHeader ul li{
+   	float:left;
+   	border-right-color:#FFFFFF;
+   	border-right-style:solid;
+   	border-right-width:1px;
+}
+
+.pageHeader ul li a:link, .pageHeader ul li a:visited{
+	display: block;
+    color: #FFFFFF;
+    background-color: #666666;
+    text-align: center;
+    font-size:12px;
+    padding: 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.pageHeader ul li a:hover, .pageHeader ul li a:active {
+    background-color: #000000;
+    font-size:12px;
+}

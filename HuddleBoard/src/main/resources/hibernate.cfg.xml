@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+   <session-factory>
+	   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+	   <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+	
+	   <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/huddle</property>
+	   <property name="hibernate.connection.username">user</property>
+	   <property name="hibernate.connection.password">password</property>
+	   
+	   <property name="hibernate.show_sql">true</property>
+	   <property name="format_sql">true</property>
+	   <property name="use_sql_comments">true</property>
+	   <!-- <property name="hbm2ddl.auto">create</property> -->
+	   <!-- <property name="hibernate.default_schema">HB</property> -->
+	   
+	   
+	   <mapping class="com.huddle.dbo.Defects"/>
+	   <mapping class="com.huddle.dbo.RDs"/>
+	   <mapping class="com.huddle.dbo.Projects"/>
+	   <mapping class="com.huddle.dbo.Tickets"/>
+	   <mapping class="com.huddle.dbo.Queries"/>
+	   <mapping class="com.huddle.dbo.OtherInfo"/>
+	   
+	</session-factory>
+	
+</hibernate-configuration>

@@ -1,0 +1,8 @@
+web.xml -> welcome file list, servlet-> parameter -> huddle.jsp -> welcome
+
+servlet -> is this huddle.jsp, model call-> get request
+
+huddle.jsp->
+
+chart for individual person by week or month
+
